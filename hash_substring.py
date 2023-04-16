@@ -17,18 +17,9 @@ def read_input():
     else: 
         print('wrong input')
     
-    # after input type choice
-    # read two lines 
-    # first line is pattern 
-    # second line is text in which to look for pattern 
-    
-    # return both lines in one return
-    
-    # this is the sample return, notice the rstrip function
     return (pattern, string)
 
 def print_occurrences(output):
-    # zon't touch this 
     print(' '.join(map(str, output)))
 
 def get_occurrences(pattern, text):
@@ -45,8 +36,6 @@ def get_occurrences(pattern, text):
             window_hash = hash(text[i+1:i+1+pattern_len])
     return result
 
-
-# this part launches the functions
 if __name__ == '__main__':
     print_occurrences(get_occurrences(*read_input()))
 

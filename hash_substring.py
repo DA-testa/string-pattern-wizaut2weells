@@ -11,9 +11,9 @@ def read_input():
         filename = input()     
         if 'a' in filename:    
             return
-        with open(f"./test/{filename}", mode="r") as file:
+        with open(f"./tests/{filename}", mode="r") as file:
             pattern = file.readline().rstrip()
-            string = file.input().rstrip()
+            string = file.readline().rstrip()
     else: 
         print('wrong input')
     

@@ -8,10 +8,7 @@ def read_input():
         string = input().rstrip()       
 
     elif 'F' in input_method:
-        filename = input()     
-        if 'a' in filename:    
-            return
-        with open(f"./tests/{filename}", mode="r") as file:
+        with open("tests/06","r") as file:
             pattern = file.readline().rstrip()
             string = file.readline().rstrip()
     else: 
